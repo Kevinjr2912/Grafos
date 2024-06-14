@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coita Map</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Welcome to Coita Map</h1>
+      </header>
+      <main>
+        <div class="input-section">
+          <div class="input-location">
+            <div class="input-location-info">
+              <label for="location">Ingresa lugar:</label>
+              <input
+                type="text"
+                id="location"
+                placeholder="Puedes ingresar lugares separados por coma"
+              />
+            </div>
+            <button type="button" id="addPlace">Agregar lugar</button>
+          </div>
+          <div class="input-distance">
+            <h2>Agregar distancia entre dos lugares</h2>
+            <div class="info-firstPlace">
+              <label for="place1">Lugar 1:</label>
+              <input
+                type="text"
+                id="place1"
+                placeholder="Ingresa un primer lugar"
+              />
+            </div>
+            <div class="information-second-place">
+              <label for="place2">Lugar 2:</label>
+              <input
+                type="text"
+                id="place2"
+                placeholder="Ingresa un segundo lugar"
+              />
+            </div>
+            <div class="information-three">
+              <label for="distance">Ingresar distancia:</label>
+              <input
+                type="text"
+                id="distance"
+                placeholder="Ingresar distancia"
+              />
+            </div>
+            <button type="button" id="btn_addDistance">
+              Agregar distancia
+            </button>
+          </div>
+          <div class="show-routes">
+            <div class="actionsPlace">
+              <label for="nodeInit"
+              >Lugar para iniciar el recorrido:</label
+            >
+            <input type="text" id="nodeInit" placeholder="Ingresa el lugar" />
+            </div>
+            <button type="button" id="btn-show">
+              Mostrar las rutas proporcionadas
+            </button>
+          </div>
+        </div>
+        <div class="references-dfs">
+          <div class="img-map">
+            <img src="hero-image.webp" alt="" />
+          </div>
+          <div class="table-conections">
+            <table id="placesTable" border="1px">
+              <thead>
+                <tr>
+                  <th>Lugares</th>
+                </tr>
+              </thead>
+              <tbody id="body-table">
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="controllers/script.mjs" type="module"></script>
+  </body>
+</html>

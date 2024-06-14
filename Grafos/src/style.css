@@ -1,0 +1,154 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url("map.png");
+  background-size: cover;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  font-size: 17px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  gap: 150px;
+}
+
+.img-map img{
+    margin-top: 15px;
+    border-radius: 15px;
+    width: 550px;
+}
+
+.input-section {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-location,
+.input-distance,
+.show-routes {
+  background: rgba(216, 216, 216, 0.9); 
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-location label {
+margin-top: 5px;
+  font-weight: bold;
+  width: 200px;
+}
+
+.input-distance label {
+  font-weight:bolder;
+  width: 200px;
+}
+
+.input-distance div{
+    margin-top: 30px;
+}
+
+.input-location-info,
+.info-firstPlace,
+.information-second-place,
+.information-three {
+  display: flex;
+}
+
+.input-location-info img {
+  width: 50px;
+  margin-left: 20px;
+  margin-bottom: 1px;
+}
+
+input {
+  font-size: 15px;
+  width: 500px;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 2px solid #c2bfbf;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #000000;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #09385c;
+}
+
+.table-conections{
+  margin-top: 40px;
+  text-align: center;
+  margin-left: 130px;
+}
+
+#placesTable {
+  width: 350px;
+  border-collapse: collapse;
+  background-color: rgb(200, 200, 210);
+}
+
+#placesTable th, #placesTable td {
+  border: 1px solid #000;
+  padding: 8px;
+}
+
+#placesTable th {
+  background-color: rgb(180, 180, 190);
+  color: #000;
+}
+
+#placesTable tr:nth-child(even) {
+  background-color: rgb(220, 220, 230);
+}
+
+#placesTable tr:hover {
+  background-color: rgb(170, 170, 180);
+}
+
+.actionsPlace{
+  display: flex;
+}
+
+.show-routes label{
+  margin-right: 5px;
+  width: 350px;
+}
+
