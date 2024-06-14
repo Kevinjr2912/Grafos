@@ -42,8 +42,6 @@ export default class Graph {
             this.dfs(v.data.name,callback)
         } 
     }
-
-    this.#listVisit.fill(false)
   }
 
 

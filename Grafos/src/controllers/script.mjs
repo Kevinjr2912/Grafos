@@ -12,13 +12,14 @@ addPlace.addEventListener("click", () => {
   if (vertices.length == 1) {
     g.addV(vertices[0].trim())
     addDataTable(vertices[0].trim());
+    alert('Excelente, haz agregado un lugar llamado: ' + vertices[0])
   } else {
     g.addVertices(...vertices.map((v) => v.trim()))
+    alert('Excelente, haz agregado los lugares: ' + vertices)
   }
 
   document.getElementById("location").value = "";
 });
-
 
 let btn_distance = document.getElementById("btn_addDistance");
 btn_distance.addEventListener("click", () => {
