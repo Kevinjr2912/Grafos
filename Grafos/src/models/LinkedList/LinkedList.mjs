@@ -25,21 +25,6 @@ export default class LinkedList {
         this.#count++
     }
 
-    recorrerNode(callBack){
-        if(this.#head == null){
-            console.log('La lista enlazada está vacía')
-        }
-        else{
-            let node = this.#head;
-
-            while(node != null){
-                callBack(node)
-
-                node = node.next;
-            }
-        }
-    }
-
     getHead(){
         return this.#head
     }

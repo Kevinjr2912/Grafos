@@ -59,8 +59,12 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.input-distance{
+  height: 300px;
+}
+
 .input-location label {
-margin-top: 5px;
+  margin-top: 5px;
   font-weight: bold;
   width: 200px;
 }
@@ -70,8 +74,18 @@ margin-top: 5px;
   width: 200px;
 }
 
+#place1,#place2{
+  margin-left: -20px;
+}
+
 .input-distance div{
-    margin-top: 30px;
+    margin-top: 25px;
+}
+
+.box-places{
+  display: flex;
+  justify-content: center;
+  margin-left: -60px;
 }
 
 .input-location-info,
@@ -79,6 +93,18 @@ margin-top: 5px;
 .information-second-place,
 .information-three {
   display: flex;
+}
+
+.information-three{
+  width: 400px;
+  position: relative;
+  top: 25px;
+  left: 120px;
+}
+
+#btn_addDistance{
+  position: relative;
+  top: 55px;
 }
 
 .input-location-info img {
@@ -95,6 +121,10 @@ input {
   outline: none;
   border-bottom: 2px solid #c2bfbf;
   box-sizing: border-box;
+}
+
+#distance{
+  width: 150px;
 }
 
 button {

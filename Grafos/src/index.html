@@ -11,44 +11,30 @@
       <header>
         <h1>Welcome to Coita Map</h1>
       </header>
-      <main>
+      <main>6
         <div class="input-section">
           <div class="input-location">
             <div class="input-location-info">
-              <label for="location">Ingresa lugar:</label>
-              <input
-                type="text"
-                id="location"
-                placeholder="Puedes ingresar lugares separados por coma"
-              />
+              <label for="place">Ingresa lugar:</label>
+              <input type="text" id="place" placeholder="Nombre del lugar" />
             </div>
             <button type="button" id="addPlace">Agregar lugar</button>
           </div>
           <div class="input-distance">
             <h2>Agregar distancia entre dos lugares</h2>
-            <div class="info-firstPlace">
-              <label for="place1">Lugar 1:</label>
-              <input
-                type="text"
-                id="place1"
-                placeholder="Ingresa un primer lugar"
-              />
-            </div>
-            <div class="information-second-place">
-              <label for="place2">Lugar 2:</label>
-              <input
-                type="text"
-                id="place2"
-                placeholder="Ingresa un segundo lugar"
-              />
+            <div class="box-places">
+              <div class="info-firstPlace">
+                <label for="place1">Lugar 1:</label>
+                <select name="place1" id="place1"></select>
+              </div>
+              <div class="information-second-place">
+                <label for="place2">Lugar 2:</label>
+                <select name="place2" id="place2"></select>
+              </div>
             </div>
             <div class="information-three">
               <label for="distance">Ingresar distancia:</label>
-              <input
-                type="text"
-                id="distance"
-                placeholder="Ingresar distancia"
-              />
+              <input type="text" id="distance" placeholder="Distancia" />
             </div>
             <button type="button" id="btn_addDistance">
               Agregar distancia
@@ -56,14 +42,22 @@
           </div>
           <div class="show-routes">
             <div class="actionsPlace">
-              <label for="nodeInit"
-              >Lugar para iniciar el recorrido:</label
-            >
-            <input type="text" id="nodeInit" placeholder="Ingresa el lugar" />
+              <label for="nodeInit">Lugar para iniciar el recorrido:</label>
+              <input type="text" id="nodeInit" placeholder="Ingresa el lugar" />
             </div>
             <button type="button" id="btn-show">
               Mostrar las rutas proporcionadas
             </button>
+          </div>
+          <div class="show-routes">
+            <div class="actionsPlace">
+              <label for="nodeInit">Partida para el camino más corto:</label>
+              <input type="text" id="verticeinicial" placeholder="Ingresa el lugar de partida" />
+            </div>
+            <button type="button" id="btn-showDijsktra">
+              Admitir lugar
+            </button>
+            <div id="result-dijs"></div>
           </div>
         </div>
         <div class="references-dfs">
@@ -77,9 +71,7 @@
                   <th>Lugares</th>
                 </tr>
               </thead>
-              <tbody id="body-table">
-                
-              </tbody>
+              <tbody id="body-table"></tbody>
             </table>
           </div>
         </div>
